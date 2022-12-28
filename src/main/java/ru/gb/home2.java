@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class home2 {
 
     public static void main(String[] args) {
-        new home2().getVal();
+        new home2().ex3();
     }
 
     public float getVal(){
@@ -39,6 +39,23 @@ public class home2 {
         } catch (ArithmeticException e) {
             System.out.println("Catching exception: " + e);
         }
+
+    }
+
+    public void ex3(){
+
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+
+        try{
+            if(str.isBlank()){
+               throw  new Exception();
+            }
+
+        }catch (Exception e){
+            System.out.println("print not empty string -> " + e.getMessage());
+        }
+
 
     }
 
