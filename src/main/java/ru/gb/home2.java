@@ -27,4 +27,19 @@ public class home2 {
        return val;
     }
 
+    public void ex2(){
+        try {
+            int d = 0;
+            int[] intArray = new int[8];
+            double catchedRes1 = 0f;
+            for (int i = 0; i < intArray.length; i++) {
+                catchedRes1 += intArray[i] / d;
+            }
+            System.out.println("catchedRes1 = " + catchedRes1);
+        } catch (ArithmeticException e) {
+            System.out.println("Catching exception: " + e);
+        }
+
+    }
+
 }
